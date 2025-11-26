@@ -51,8 +51,9 @@ public class DemoApplication implements CommandLineRunner {
                     .option("inferSchema", "true") // tenta inferir tipo das colunas
                     .csv(caminhoArquivo);
 
+            
             // Mostra as primeiras 5 linhas
-            dados.show(5);
+            dados.show(100);
 
             // Conta o número total de registros
             long totalRegistros = dados.count();
